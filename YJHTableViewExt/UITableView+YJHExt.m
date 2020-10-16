@@ -9,7 +9,7 @@
 
 @implementation UITableView (YJHExt)
 /// 注册cell
-- (void)yjh_registerCells:(NSDictionary<NSString *, NSString *> *)cells {
+- (void)registerCells:(NSDictionary<NSString *, NSString *> *)cells {
     NSAssert(cells != nil || cells.allKeys.count > 0, @"cells is nil!! ");
     NSEnumerator *enumerator = cells.keyEnumerator;
     NSString *key;

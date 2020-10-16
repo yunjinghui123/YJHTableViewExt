@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
  value 传入重用cell的id
  */
 @interface UITableView (YJHExt)
-- (void)yjh_registerCells:(NSDictionary<NSString *, NSString *> *)cells;
+- (void)registerCells:(NSDictionary<NSString *, NSString *> *)cells;
 @end
 
 NS_ASSUME_NONNULL_END
