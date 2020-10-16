@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "YJHTableViewExt"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Simplify tableview code"
   spec.homepage     = "https://github.com/yunjinghui123/YJHTableViewExt"
   spec.license      = "MIT"

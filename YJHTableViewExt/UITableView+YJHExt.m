@@ -8,7 +8,7 @@
 #import "UITableView+YJHExt.h"
 
 @implementation UITableView (YJHExt)
-#pragma mark - 注册cell
+/// 注册cell
 - (void)yjh_registerCells:(NSDictionary<NSString *, NSString *> *)cells {
     NSAssert(cells != nil || cells.allKeys.count > 0, @"cells is nil!! ");
     NSEnumerator *enumerator = cells.keyEnumerator;

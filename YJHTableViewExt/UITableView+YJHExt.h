@@ -9,9 +9,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ 给 tableView 批量注册cell , 为了避免和项目中的其他分类产生冲突加入前缀。
+ 
+ key 传入 cell 类名的字符串，例如：
+ #interface YJHHomePageCell: UITableViewCell
+ #end
+ key 需要传入 @"YJHHomePageCell"
+ 但是为了编码规范, 可以使用 NSStringFromClass([YJHHomePageCell class]) ，这样将 YJHHomePageCell 类删除之后可以及时发现，避免崩溃。
+ 
+ value 传入重用cell的id
+ */
 @interface UITableView (YJHExt)
-/// 给 tableView 注册cell , 为了避免和项目中的其他分类产生冲突加入前缀
-/// @param cells key 传要注册的cell类，value 传入重用id
 - (void)yjh_registerCells:(NSDictionary<NSString *, NSString *> *)cells;
 @end
 
