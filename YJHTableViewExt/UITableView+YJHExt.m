@@ -18,4 +18,12 @@
         [self registerClass:[NSClassFromString(key) class] forCellReuseIdentifier:value];
     }
 }
+
+/// 设置分组头部间隙为0
+- (void)setSectionHeaderTopPaddingToZero {
+    if (@available(iOS 15.0, *)) {
+        self.sectionHeaderTopPadding = 0;
+    }
+}
+
 @end

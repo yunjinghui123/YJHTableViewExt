@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface UITableView (YJHExt)
 - (void)registerCells:(NSDictionary<NSString *, NSString *> *)cells;
+/// 设置分组头部间隙为0
+- (void)setSectionHeaderTopPaddingToZero;
 @end
 
 NS_ASSUME_NONNULL_END
